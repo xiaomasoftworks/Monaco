@@ -1,10 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
-
 	<style type="text/css">
 		:root {
 			--url: url("");
@@ -12,13 +11,13 @@
 
 		html,
 		body {
-			background-color: #1E1E1E;
+			background-color: #ffffff00;
 			width: 100%;
 			height: 100%;
 			margin: 0;
 			padding: 0;
 			overflow: hidden;
-			font-family: 'JetBrains Mono', consolas, 'poppins', monospace;
+			font-family: 'JetBrains Mono', 'poppins', monospace;
 			color: white;
 		}
 
@@ -93,68 +92,56 @@
 			monaco.editor.defineTheme('Dark', {
                 base: 'vs-dark',
                 inherit: true,
-                rules: [
-       { "token": "variable.language.self", "settings": { "foreground": "#ffc107" } },
-{ "token": "variable.parameter.variadic", "settings": { "foreground": "#ffc107" } },
-{ "token": "variable.parameter.function", "settings": { "foreground": "#ffc107" } },
-{ "token": "variable.other.constant", "settings": { "foreground": "#ffc107" } },
-{ "token": "variable.property", "settings": { "foreground": "#ffc107" } },
-{ "token": "variable.object.property", "settings": { "foreground": "#ffc107" } },
-
-{ "token": "keyword", "settings": { "foreground": "#ff9800" } },
-{ "token": "keyword.local", "settings": { "foreground": "#ff9800", "fontStyle": "bold" } },
-{ "token": "keyword.operator", "settings": { "foreground": "#ff9800" } },
-{ "token": "keyword.operator.type.annotation", "settings": { "foreground": "#ff9800" } },
-{ "token": "keyword.operator.typedef.annotation", "settings": { "foreground": "#ff9800" } },
-{ "token": "keyword.control.export", "settings": { "foreground": "#ff9800", "fontStyle": "bold" } },
-
-{ "token": "operator", "settings": { "foreground": "#f9a825" } },
-{ "token": "operator.type", "settings": { "foreground": "#f9a825" } },
-{ "token": "operator.special", "settings": { "foreground": "#f9a825" } },
-
-{ "token": "entity.name.type.alias", "settings": { "foreground": "#ffeb3b" } },
-{ "token": "entity.name.function", "settings": { "foreground": "#f9a825" } },
-
-{ "token": "global", "settings": { "foreground": "#ffeb3b", "fontStyle": "bold" } },
-
-{ "token": "storage.type", "settings": { "foreground": "#ffeb3b" } },
-
-{ "token": "comment", "settings": { "foreground": "#fdd835", "fontStyle": "italic" } },
-{ "token": "comment.highlight.title", "settings": { "foreground": "#fdd835", "fontStyle": "italic" } },
-{ "token": "comment.highlight.name", "settings": { "foreground": "#fdd835", "fontStyle": "italic" } },
-{ "token": "comment.delimiter.modifier", "settings": { "foreground": "#fdd835", "fontStyle": "italic" } },
-{ "token": "comment.highlight.modifier", "settings": { "foreground": "#fdd835", "fontStyle": "italic" } },
-{ "token": "comment.highlight.descriptor", "settings": { "foreground": "#fdd835", "fontStyle": "italic" } },
-
-{ "token": "delimiter.longstring", "settings": { "foreground": "#f57c00" } },
-{ "token": "delimiter.bracket", "settings": { "foreground": "#f57c00" } },
-{ "token": "delimiter.array", "settings": { "foreground": "#f57c00" } },
-{ "token": "delimiter.parenthesis", "settings": { "foreground": "#f57c00" } },
-{ "token": "delimiter", "settings": { "foreground": "#f57c00" } },
-
-{ "token": "string", "settings": { "foreground": "#ffc107" } },
-{ "token": "longstring", "settings": { "foreground": "#ffc107" } },
-{ "token": "string.delimeter", "settings": { "foreground": "#ffc107" } },
-{ "token": "string.escape", "settings": { "foreground": "#ffc107" } },
-
-{ "token": "punctuation.separator.arguments", "settings": { "foreground": "#ffeb3b" } },
-{ "token": "punctuation.separator.parameter", "settings": { "foreground": "#ffeb3b" } },
-{ "token": "punctuation.separator.table", "settings": { "foreground": "#ffeb3b" } },
-{ "token": "punctuation.definition.block", "settings": { "foreground": "#ffeb3b" } },
-{ "token": "punctuation.definition.parameters", "settings": { "foreground": "#ffeb3b" } },
-{ "token": "punctuation.definition.typeparameters", "settings": { "foreground": "#ffeb3b" } },
-
-{ "token": "constant.language", "settings": { "foreground": "#ffeb3b" } },
-{ "token": "number", "settings": { "foreground": "#ffeb3b" } },
-{ "token": "constants", "settings": { "foreground": "#ffeb3b" } },
-
-{ "token": "support.function", "settings": { "foreground": "#ffeb3b" } },
-{ "token": "support.function.library", "settings": { "foreground": "#ffa000" } },
-{ "token": "support.type", "settings": { "foreground": "#ffa000" } }
-
-                ],
+ 			rules: [
+	{ "token": "variable.language.self", "foreground": "ffffff" },
+        { "token": "variable.parameter.variadic", "foreground": "ffffff" },
+        { "token": "variable.parameter.function", "foreground": "#faaaaa" },
+        { "token": "variable.other.constant", "foreground": "ffffff" },
+        { "token": "variable.property", "foreground": "ffffff" },
+        { "token": "variable.object.property", "foreground": "ffffff" },
+        { "token": "keyword", "foreground": "#ff7d7d" },
+        { "token": "keyword.local", "foreground": "ff7d7d", "fontStyle": "bold" },
+        { "token": "keyword.operator", "foreground": "6495ed" },
+        { "token": "keyword.operator.type.annotation", "foreground": "6495ed" },
+        { "token": "keyword.operator.typedef.annotation", "foreground": "6495ed" },
+        { "token": "keyword.control.export", "foreground": "6495ed", "fontStyle": "bold" },
+        { "token": "operator", "foreground": "ffffff" },
+        { "token": "operator.type", "foreground": "ffffff" },
+        { "token": "operator.special", "foreground": "ffffff" },
+        { "token": "entity.name.type.alias", "foreground": "ffffff" },
+        { "token": "entity.name.function", "foreground": "#ffdbdb" },
+        { "token": "global", "foreground": "#faaaaa", "fontStyle": "bold" },
+        { "token": "storage.type", "foreground": "ffffff" },
+        { "token": "comment", "foreground": "999999", "fontStyle": "italic" },
+        { "token": "comment.highlight.title", "foreground": "999999", "fontStyle": "italic" },
+        { "token": "comment.highlight.name", "foreground": "999999", "fontStyle": "italic" },
+        { "token": "comment.delimiter.modifier", "foreground": "999999", "fontStyle": "italic" },
+        { "token": "comment.highlight.modifier", "foreground": "999999", "fontStyle": "italic" },
+        { "token": "comment.highlight.descriptor", "foreground": "999999", "fontStyle": "italic" },
+        { "token": "delimiter.longstring", "foreground": "ffffff" },
+        { "token": "delimiter.bracket", "foreground": "ffffff" },
+        { "token": "delimiter.array", "foreground": "ffffff" },
+        { "token": "delimiter.parenthesis", "foreground": "ffffff" },
+        { "token": "delimiter", "foreground": "ffffff" },
+        { "token": "string", "foreground": "ff9696" },
+        { "token": "longstring", "foreground": "ff9696" },
+        { "token": "string.delimeter", "foreground": "ff9696" },
+        { "token": "string.escape", "foreground": "ff9696" },
+        { "token": "punctuation.separator.arguments", "foreground": "ffffff" },
+        { "token": "punctuation.separator.parameter", "foreground": "ffffff" },
+        { "token": "punctuation.separator.table", "foreground": "ffffff" },
+        { "token": "punctuation.definition.block", "foreground": "ffffff" },
+        { "token": "punctuation.definition.parameters", "foreground": "ffffff" },
+        { "token": "punctuation.definition.typeparameters", "foreground": "ffffff" },
+        { "token": "constant.language", "foreground": "#faaaaa" },
+        { "token": "number", "foreground": "f08080" },
+        { "token": "constants", "foreground": "ffffff" },
+        { "token": "support.function", "foreground": "#ffcfcf" },
+        { "token": "support.function.library", "foreground": "ffffff" },
+        { "token": "support.type", "foreground": "#faaaaa" },
+                	],
                 colors: {
-                    'editor.background': '#151515',
+		    'editor.background': '#151515',
                     'minimap.background': '#151515'
                 }
             });
@@ -169,10 +156,20 @@
 					triggerCharacters: ['.', ':', '"'],
 				});
 
+			
 				editor = monaco.editor.create(document.getElementById('container'), {
-					value: '',
+					value: `--[[
+
+Thank you for choosing Elephatware Executor
+Dont forget to join our discord server
+
+DISCORD: https://discord.gg/CbJHywsB
+
+made by xmsW :D
+]]`,
 					language: 'lua',
 					theme: "Dark",
+					fontFamily: 'JetBrains Mono',
 					folding: true,
 					dragAndDrop: true,
 					links: true,
@@ -182,22 +179,20 @@
 					showFoldingControls: "always",
 					smoothScrolling: true,
 					stopRenderingLineAfter: 6500,
-					fontFamily: 'JetBrains Mono',
-					fontSize: 14,
+					fontSize: 15,
 					cursorBlinking: "smooth",
 					cursorSmoothCaretAnimation: true,
-					foldingHighlight: false,
+					foldingHighlight: true,
 					fontLigatures: true,
 					formatOnPaste: true,
 					showDeprecated: true,
 					suggest: {
-						snippetsPreventQuickSuggestions: false,
+						snippetsPreventQuickSuggestions: true,
 					},
 				});
 
-				editor.getModel().updateOptions({ insertSpaces: false })
-			});
-
+				editor.getModel().updateOptions({ insertSpaces: true })
+			});	
 			window.onresize = function () {
 				editor.layout();
 			}
